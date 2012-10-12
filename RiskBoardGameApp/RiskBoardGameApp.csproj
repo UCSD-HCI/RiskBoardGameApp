@@ -128,9 +128,58 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ArmyViz.xaml.cs">
+      <DependentUpon>ArmyViz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CardHolder.xaml.cs">
+      <DependentUpon>CardHolder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlButton.xaml.cs">
+      <DependentUpon>ControlButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dice.cs" />
+    <Compile Include="DiceViz.xaml.cs">
+      <DependentUpon>DiceViz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameMessageControl.xaml.cs">
+      <DependentUpon>GameMessageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerInfoControl.xaml.cs">
+      <DependentUpon>PlayerInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerManager.cs" />
+    <Compile Include="RiskMap.xaml.cs">
+      <DependentUpon>RiskMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SoundPool.cs" />
+    <Compile Include="StateManager.cs" />
     <Compile Include="UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WizardOzWindow.xaml.cs">
+      <DependentUpon>WizardOzWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ArmyViz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CardHolder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ControlButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DiceViz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameMessageControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -143,9 +192,25 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PlayerInfoControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RiskMap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="riskmap2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WizardOzWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +282,54 @@
     <None Include="lib\thresholdSurfaceMap.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sound\AddArmy.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackChooseSource.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackFail.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackL1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackL2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackL3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\AttackWin.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\bgm.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Error.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\RoundPass.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Success.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="riskmap2_files\image0.png" />
+    <Resource Include="riskmap2_files\image1.png" />
+    <Resource Include="riskmap2_files\image2.png" />
+    <Resource Include="riskmap2_files\image3.png" />
+    <Resource Include="riskmap2_files\image4.png" />
+    <Resource Include="riskmap2_files\image5.png" />
+    <Resource Include="riskmap2_files\image6.png" />
+    <Resource Include="riskmap2_files\image7.png" />
+    <Resource Include="Images\army_L1_mask.png" />
+    <Resource Include="Images\army_L2_mask.png" />
+    <Resource Include="Images\army_L3_mask.png" />
+    <Resource Include="Images\cancel.png" />
+    <Resource Include="Images\finish.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\right_arrow.png" />
     <Content Include="lib\AddIns\MultipleMice\MultipleMice.dll" />
     <Content Include="lib\AddIns\MultipleMice\MultipleMice.pdb" />
     <Content Include="lib\AddIns\TuioProvider\TUIO.dll" />
